@@ -15,6 +15,7 @@ pub use libc::*;
 
 #[macro_use]
 mod use_libc;
+mod util;
 
 #[cfg(feature = "std")]
 mod nss;
@@ -22,6 +23,7 @@ mod nss;
 mod printf;
 #[cfg(feature = "std")]
 mod resolve;
+mod strstr;
 #[cfg(feature = "std")]
 mod strtod;
 #[cfg(feature = "std")]
